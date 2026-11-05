@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TheSmarties Arcade · JaiGod</title>
+<meta name="description" content="A Discord bot with games to play right in chat: tower defense, story adventures, cookie clicker, plus study music and server tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0420;--panel:#140a33;--line:#2a1a5e;--ink:#ece8ff;--mute:#a99fd6;--gold:#ffd76a;--pink:#ff7ad9;--cyan:#5ee7ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#2a1366 0,transparent 60%),var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+a{color:var(--cyan)}.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{padding:64px 0 36px}.studio{font:600 13px Inter;letter-spacing:.2em;color:var(--mute);text-transform:uppercase}
+h1{font:700 clamp(36px,6vw,64px)/1.05 "Space Grotesk",sans-serif;margin:10px 0 12px;background:linear-gradient(90deg,var(--gold),var(--pink),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{font-size:19px;color:var(--mute);max-width:760px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.btn{display:inline-flex;gap:8px;align-items:center;padding:12px 18px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;font-weight:600}
+.btn.primary{background:linear-gradient(90deg,#6a4dff,#c04dff);border:0}.btn:hover{transform:translateY(-1px)}
+section{margin:28px 0}h2{font:700 24px "Space Grotesk";margin:0 0 14px}
+.viewer{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;height:min(60vh,520px)}model-viewer{width:100%;height:100%}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}.grid a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--panel);aspect-ratio:16/10}
+.grid img,.grid video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}.grid a:hover img{transform:scale(1.04)}
+.readme{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px}.readme img{max-width:100%}.readme table{border-collapse:collapse;display:block;overflow-x:auto}.readme td,.readme th{border:1px solid var(--line);padding:6px 10px}
+.readme pre{background:#08021a;padding:14px;border-radius:10px;overflow:auto}.readme code{font-family:ui-monospace,Consolas,monospace}
+footer{padding:40px 0;color:var(--mute);font-size:14px;text-align:center}
+@media (max-width:600px){header{padding:40px 0 20px}.readme{padding:18px}}
+</style></head><body>
+<div class="wrap">
+<header><div class="studio">JaiGod Studio · by Jaineil R.</div><h1>TheSmarties Arcade</h1><p class="tag">A Discord bot with games to play right in chat: tower defense, story adventures, cookie clicker, plus study music and server tools.</p>
+<div class="btns"><a class="btn primary" href="https://github.com/JaiGod/TheSmarties-Arcade">⭐ View on GitHub</a><a class="btn" href="https://github.com/JaiGod/TheSmarties-Arcade/archive/refs/heads/main.zip">⬇️ Download ZIP</a><a class="btn" href="https://github.com/JaiGod">🏢 More JaiGod projects</a></div></header>
+
+
+<section><h2>📖 About this project</h2><div class="readme" id="readme">Loading…</div></section>
+<footer>© Jaineil R. · <a href="https://github.com/JaiGod">JaiGod</a></footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script>fetch('README.md').then(r=>r.ok?r.text():Promise.reject()).then(t=>{document.getElementById('readme').innerHTML=marked.parse(t)}).catch(()=>{document.getElementById('readme').innerHTML='<p>All the files for this project are on <a href="https://github.com/JaiGod/TheSmarties-Arcade">GitHub</a>.</p>'})</script>
+
+</body></html>
